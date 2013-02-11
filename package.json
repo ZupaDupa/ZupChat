@@ -1,7 +1,7 @@
 {
-  "name": "MultiWebRTC",
-  "description": "Example of multi user webrtc",
-  "version": "0.0.2-1",
+  "name": "ZupChat",
+  "description": "Multi user video calls with WebRTC",
+  "version": "0.0.1",
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -11,23 +11,14 @@
     "express": "3.1.0",
     "ws": "latest"
   },
-  "subdomain": "MultiWebRTC",
   "scripts": {
-    "start": "example/server.js"
+    "start": "src/server.js"
   },
-  "author": "Ben Brittain",
+  "author": "Kalle Rainio",
   "contributors": [
     {
-      "name": "Ben Brittain",
-      "email": "ben@brittain.org"
-    },
-    {
-      "name": "Dennis Mårtensson",
-      "email": "me@dennis.is"
-    },
-    {
-      "name": "David Peter",
-      "email": "david.a.peter@gmail.com"
+      "name": "Kalle Rainio",
+      "email": "kallerainio@gmail.com"
     }
   ]
 }

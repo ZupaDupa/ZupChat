@@ -1,18 +1,32 @@
-#webrtc.io-demo
+#ZupChat
 ==============
 
-You can have a look at the [demo](http://bit.ly/webrtcio)
+You can have a look at the demo on http://koodikalle.net:8000
 
-##Instructions on how to setup the demo:
+## Features
+
+* Keeps track of active users and automatically adds/removes audio & video from users that join/leave the video call
+* Small preview of the local video in the bottom right corner
+* Remote videos can be arranged by dragging and resizing
+* Currently only works on Chrome
+
+##TODO
+
+* Firefox support ([http://www.webrtc.org/interop](webrtc.org) has a list of API differences between Chrome and Firefox that need to be addressed)
+* A control for toggling local video preview
+* A control for toggling between auto/custom arrangement of remote videos
+
+
+##Installing and running
 
 Run in your terminal
 
 ```bash 
-git clone git@github.com:webRTC/webrtc.io-demo.git
+git clone git@github.com:ZupaDupa/zupchat.git
 ```
 
 ```bash 
-cd webrtc.io-demo
+cd zupchat
 ```
 
 ```bash 
@@ -20,7 +34,7 @@ npm install
 ```
 
 ```bash 
-cd example
+cd src
 ```
 
 ```bash 
@@ -38,11 +52,6 @@ go to [localhost:8000](http://localhost:8000)
 click allow to see your camera and the connection will be made between your to open windows.
 
 
-##For instructions on how to start developing with webRTC.io
+##Thanks to
 
-go to [https://github.com/webRTC/webRTC.io](https://github.com/webRTC/webRTC.io) and read the instructions.
-
-Developed by:
-    [@dennismatensson](https://github.com/dennismartensson)
-    [@cavedweller](https://github.com/cavedweller)
-    [@sarenji](https://github.com/sarenji)
+ZupChat is based on [https://github.com/webRTC/webrtc.io-demo](webrtc.io-demo) by Ben Brittain, Dennis Mårtensson and David Peter.
