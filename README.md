@@ -1,8 +1,6 @@
 #ZupChat
 ==============
 
-You can have a look at the demo on http://koodikalle.net:8000
-
 ## Features
 
 * Keeps track of active users and automatically adds/removes audio & video from users that join/leave the video call
