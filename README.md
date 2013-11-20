@@ -52,4 +52,4 @@ click allow to see your camera and the connection will be made between your to o
 
 ##Thanks to
 
-ZupChat is based on [https://github.com/webRTC/webrtc.io-demo](webrtc.io-demo) by Ben Brittain, Dennis Mårtensson and David Peter.
+ZupChat is based on [webrtc.io-demo](https://github.com/webRTC/webrtc.io-demo) by Ben Brittain, Dennis Mårtensson and David Peter.
