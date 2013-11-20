@@ -137,18 +137,6 @@
 				
 				if( jquery_ready == true && auto_arrange == false /* && videos.length > 1 */ ) {
 					
-					/*
-					for (var i = 0, len = videos.length; i < len; i++) {
-						var video = videos[i];
-						video.style.float = 'left';
-						video.style.width = '300px';
-						video.style.height = '225px';
-						video.style.position = "";
-						video.style.left = (i * 20) + "px";
-						video.style.top = (i * 20) + "px";
-					}
-					*/
-					
 					makeVideosDraggable();
 					
 				} else {
@@ -219,7 +207,7 @@
 						document.getElementById('you').src = URL.createObjectURL(stream);
 						
 						// Add the video element to the array that contains all the videos
-						//videos.push(document.getElementById('you'));
+						videos.push(document.getElementById('you'));
 						
 						// Arrange videos so that they all fit the screen nicely
 						subdivideVideos();
@@ -235,10 +223,15 @@
 				// Get the room ID from the browser's URL
 				var room = window.location.hash.slice(1);
 
+				// Get the server address and port from the browser's URL
+				var server_address = window.location.href.substring( window.location.protocol.length + 2 );
+				server_address = server_address.split('/');
+				server_address = 'ws://'+ server_address[0];
+
+
 				// Connect to the NodeJS server to discover other participants
-				rtc.connect("ws:" + window.location.href.substring(window.location.protocol.length), room);
-
-
+				console.log('connecting to '+ server_address +'...');
+				rtc.connect( server_address , room);
 
 
 				// What to do when there's a new remote stream
