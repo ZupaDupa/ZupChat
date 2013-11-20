@@ -1,5 +1,5 @@
 #ZupChat
-==============
+
 
 ## Features
 
@@ -10,7 +10,7 @@
 
 ##TODO
 
-* Firefox support ([http://www.webrtc.org/interop](webrtc.org) has a list of API differences between Chrome and Firefox that need to be addressed)
+* Firefox support [webrtc.org](http://www.webrtc.org/interop) has a list of API differences between Chrome and Firefox that need to be addressed)
 * A control for toggling local video preview
 * A control for toggling between auto/custom arrangement of remote videos
 
@@ -48,6 +48,8 @@ click allow to see your camera
 go to [localhost:8000](http://localhost:8000)
 
 click allow to see your camera and the connection will be made between your to open windows.
+
+You can also use channels to have multiple video calls at the same time. You can use any alphanumeric string as the channel ID. To join a channel called "webrtc", use the link [localhost:8000/#webrtc](localhost:8000/#webrtc)
 
 
 ##Thanks to
